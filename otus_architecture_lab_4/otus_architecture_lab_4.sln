@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "otus_architecture_lab_4", "otus_architecture_lab_4\otus_architecture_lab_4.csproj", "{A48D8C61-0EFD-4B54-8FC9-65AA3093BCA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab4Tests", "lab4Tests\lab4Tests.csproj", "{E335D87F-8F01-435D-ACFA-0CED2B8C35EC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A48D8C61-0EFD-4B54-8FC9-65AA3093BCA9} = {A48D8C61-0EFD-4B54-8FC9-65AA3093BCA9}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A48D8C61-0EFD-4B54-8FC9-65AA3093BCA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A48D8C61-0EFD-4B54-8FC9-65AA3093BCA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A48D8C61-0EFD-4B54-8FC9-65AA3093BCA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A48D8C61-0EFD-4B54-8FC9-65AA3093BCA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E335D87F-8F01-435D-ACFA-0CED2B8C35EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E335D87F-8F01-435D-ACFA-0CED2B8C35EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E335D87F-8F01-435D-ACFA-0CED2B8C35EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E335D87F-8F01-435D-ACFA-0CED2B8C35EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D94D9D42-3CB5-4FE2-98D1-D3FE84C29940}
+	EndGlobalSection
+EndGlobal
