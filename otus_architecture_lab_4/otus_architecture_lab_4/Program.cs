@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 
 
@@ -14,8 +13,7 @@ namespace otus_architecture_lab_4
             string outPath = cmds.GetValue("-op");
             string method = cmds.GetValue("-m");
 
-            ISortMaker sortMaker = GetSorterMaker(method);
-            ISorter sorter = sortMaker.MakeSorter();
+            ISorter sorter = new SortBuilder().BuildSortMaker(method).MakeSorter();
 
             ListReader listReader = new ListReader();
             List<int> data = listReader.Read(inPath);
@@ -24,22 +22,6 @@ namespace otus_architecture_lab_4
 
             ListWriter listWriter = new ListWriter();
             listWriter.Write(data, method, outPath);
-        }
-
-
-        static ISortMaker GetSorterMaker(string method)
-        {
-            switch(method)
-            {
-                case "merge":
-                    return new MergeSorterMaker();
-                case "selection":
-                    return new SelectionSorterMaker();
-                case "insertion":
-                    return new InsertionSorterMaker();
-                default:
-                    throw new Exception("unknown sort method");
-            }
         }
     }
 }
